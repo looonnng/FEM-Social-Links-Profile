@@ -1,0 +1,99 @@
+:root {
+  --mobile-width: 400px;
+  --desktop-width: 1440px;
+
+  --color-accent: hsl(75, 94%, 57%);
+  --color-base: hsl(0, 0%, 100%);
+  --color-primary: hsl(0, 0%, 20%);
+  --color-secondary: hsl(0, 0%, 12%);
+  --color-secondary-darker: hsl(0, 0%, 8%);
+
+  --fs-s: 14px;
+  --fs-m: 18px;
+  --fs-l: 22px;
+  --fs-xl: 32px;
+
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 24px;
+  --spacing-xl: 32px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  font-family: 'Inter', serif;
+  color: var(--color-base);
+  background-color: var(--color-secondary-darker);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding: 0 var(--spacing-l);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-base);
+}
+
+img {
+  border-radius: 50%;
+  max-width: 40%;
+}
+
+.wrapper {
+  background-color: var(--color-secondary);
+  text-align: center;
+
+  width: 100%;
+  max-width: var(--mobile-width);
+  border-radius: var(--spacing-m);
+  padding: var(--spacing-l)
+}
+
+.name {
+  margin: var(--spacing-l) 0 var(--spacing-m) 0;
+  font-size: var(--fs-xl);
+  font-weight: 600;
+}
+
+.location {
+  color: var(--color-accent);
+  font-size: var(--fs-s);
+  font-weight: 600;
+}
+
+.about {
+  margin: var(--spacing-l) 0;
+  font-size: var(--fs-s);
+}
+
+.socials__item {
+  font-size: var(--fs-s);
+  background-color: var(--color-primary);
+  padding: var(--spacing-m) 0;
+  border-radius: var(--spacing-s);
+}
+
+.socials__item + .socials__item {
+  margin-top: var(--spacing-m);
+}
